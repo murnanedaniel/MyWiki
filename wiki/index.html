@@ -169,6 +169,8 @@ Error message and password prompt
 
 <li>$:/SiteTitle</li>
 
+<li>$:/state/Link/-1871024384/search</li>
+
 <li>$:/state/tab-1749438307</li>
 
 <li>$:/state/tab-2065006209</li>
@@ -198,6 +200,8 @@ Error message and password prompt
 <li>Another Test</li>
 
 <li>Base doesn't work</li>
+
+<li>FirstSteps</li>
 
 <li>How does this work??</li>
 
@@ -9527,6 +9531,9 @@ Error message and password prompt
 <div created="20191029184616008" modified="20191029184622923" title="$:/SiteTitle">
 <pre>Experimentation Wiki</pre>
 </div>
+<div created="20191029185807397" modified="20191029185812395" title="$:/state/Link/-1871024384/search">
+<pre></pre>
+</div>
 <div created="20191029182102268" modified="20191029182102268" title="$:/state/tab-1749438307">
 <pre>$:/core/ui/ControlPanel/Saving</pre>
 </div>
@@ -9548,7 +9555,7 @@ Error message and password prompt
 <div bag="default" revision="1" title="$:/status/UserName">
 <pre></pre>
 </div>
-<div list="WelcomeHome" title="$:/StoryList">
+<div list="FirstSteps WelcomeHome" title="$:/StoryList">
 <pre></pre>
 </div>
 <div plugin-type="info" title="$:/temp/info-plugin" type="application/json">
@@ -9731,6 +9738,29 @@ Error message and password prompt
 </div>
 <div created="20191029180845436" modified="20191029180900987" tags="" title="Base doesn't work">
 <pre>This doesn't work, right?</pre>
+</div>
+<div created="20191029185021720" modified="20191029192501910" tags="" title="FirstSteps">
+<pre>! How to build this Wiki
+
+In an attempt at recursive development, the first Tiddler will be a guide to building this Wiki. This was the result of a great deal of trial and error and dead ends, but the end result is hugely simple. It requires only a Github account. The simplest version is to begin with //this// repository (this simply removes the steps of downloading and pushing a new, empty TiddlyWiki).
+
+# Fork or clone this repository (github.com/murnanedaniel/MyWiki/)
+# Enter the repository settings, and ensure that GitHub Pages is enabled for this repository
+# Now, GitHub is hosting html webpages at {your-username}.github.io/MyWiki
+# Navigate to {your-username}.github.io/MyWiki/wiki/ - this will load the whole index.html wiki, which should be an identical copy of this wiki
+# Go to the settings of the wiki (the gear icon under the heading in the sidebar)
+# Under Saving &gt; GitHub, enter your Github credentials - these are only saved in your browser session and are thus not visible publicly. Still, I recommend making a personal token (under GitHub &gt; Settings &gt; Developer Settings &gt; Personal Access Tokens) rather than using your password, for more security
+# Now editing your wiki at {your-username}.github.io/MyWiki/wiki/ will automatically push back to the repository and update
+
+!! Some Gotchas For Impatient Users
+
+TL;DR: Be patient before leaving or reloading the wiki page.
+
+* The git sync is not instant, either //to// the repository or //from// the repository. This has a couple of consequences:
+* You can edit the wiki to your heart's content, however ensure that the red checkmark has turned grey (with an accompanying &quot;wiki saved&quot;) before you leave the wiki page, or refresh the page. This should happen regularly as an autosave, or when clicking the checkmark.
+* There appears to be a short delay in propagating from .../wiki/index.html to .../wiki/. This shouldn't take longer than 10-20 seconds, but it can be a little frustrating. If you want the fastest updating and reloading, work on .../wiki/index.html.
+* Because the sync is not instant, one can get some version issues if you are not patient (like me). This will lead to a pop-up of an XML Error. Don't worry, just wait a few seconds, click the checkmark and let the save propagate to the repository. 
+* The only real risk of losing work, is a situation where you add a tiddler NewTiddler, it is pushed and saved. You might then decide to quickly reload the page (getting the pre-NewTiddler version), and add AnotherTiddler. Now when this is saved, it will overwrite the NewTiddler wiki with the AnotherTiddler wiki. </pre>
 </div>
 <div created="20191029180558773" modified="20191029180631337" tags="" title="How does this work??">
 <pre>Is it talking to the right thing??</pre>
